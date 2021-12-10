@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+}
+
+html, body {
+  background: rgb(10, 10, 10);
+}
+
+header {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      color: #FFF;
+}
+header ul {
+  padding: 1.2em 0 0.5em;
+}
+header span {
+  padding: 0 0 0 0.5em;
+}
+header span, header i {
+  color: rgb(255, 255, 255);
+}
+header i:nth-of-type(2) {
+  cursor: pointer;
+}
+
+.row {
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+
+.product, .product--blue, .product--orange, .product--red, .product--green, .product--yellow, .product--pink {
+  box-shadow: 1px 5px 15px #CCC;
+  width: 15em;
+  height: auto;
+  border-radius: 3px;
+  padding: 2em;
+  margin: 1em;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+.product--blue {
+  background: -webkit-linear-gradient(135deg, #E84855 50%, rgba(0, 0, 0, 0.5) 50%);
+  background: linear-gradient(-45deg, #E84855 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+.product--orange {
+  background: -webkit-linear-gradient(135deg, #E84855 50%, rgba(0, 0, 0, 0.5) 50%);
+  background: linear-gradient(-45deg, #E84855 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+.product--red {
+  background: -webkit-linear-gradient(135deg, #E84855 50%, rgba(0, 0, 0, 0.5) 50%);
+  background: linear-gradient(-45deg, #E84855 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+.product--green {
+  background: -webkit-linear-gradient(135deg, #E84855 50%, rgba(0, 0, 0, 0.5) 50%);
+  background: linear-gradient(-45deg, #E84855 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+.product--yellow {
+  background: -webkit-linear-gradient(135deg, #E84855 50%, rgba(0, 0, 0, 0.5) 50%);
+  background: linear-gradient(-45deg, #E84855 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+.product--pink {
+  background: -webkit-linear-gradient(135deg, #E84855 50%, rgba(0, 0, 0, 0.5) 50%);
+  background: linear-gradient(-45deg, #E84855 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+.product img, .product--blue img, .product--orange img, .product--red img, .product--green img, .product--yellow img, .product--pink img {
+  max-width: 100%;
+  height: auto !important;
+  text-align: center;
+}
+.product_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+}
+.product_inner p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 25px;
+}
+.product_inner button {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  border-radius: 3px;
+  padding: 1em 3em;
+  margin: 1em 0 0 0;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: background ease-in .25s;
+  transition: background ease-in .25s;
+}
+.product_inner button:hover {
+  background: white;
+  color: rgb(3, 3, 3);
+}
+.product_inner button:before {
+  font-family: FontAwesome;
+  content: '\f07A';
+  color: #FFF;
+  position: absolute;
+  font-size: 1.5em;
+  margin: 0 -1.5em;
+}
+.product_inner button:hover:before {
+  color: rgb(255, 255, 255);
+}
+.product_overlay {
+  background: rgba(143, 124, 124, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product_overlay h2 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+.product_overlay i {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5em;
+}
