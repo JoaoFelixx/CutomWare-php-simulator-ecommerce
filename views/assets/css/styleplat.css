@@ -1,0 +1,43 @@
+			body, html {
+			  height: 100%;
+			}
+
+			.parallax {
+			  /* The image used */
+			  background-image: url('img/comp.png');
+
+			  /* Full height */
+			  height: 100%; 
+
+			  /* Create the parallax scrolling effect */
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+			}
+			.parallax2 {
+			  /* The image used */
+			  background-image: url('img/Play.jpg');
+
+			  /* Full height */
+			  height: 100%; 
+
+			  /* Create the parallax scrolling effect */
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+			}
+			.parallax3 {
+			  /* The image used */
+			  background-image: url('img/Xbox.jpg');
+
+			  /* Full height */
+			  height: 100%; 
+
+			  /* Create the parallax scrolling effect */
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+			}
